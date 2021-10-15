@@ -1,4 +1,4 @@
-const numberCategories = document.querySelectorAll('.item');
+const numberCategories = document.querySelectorAll('li.item');
 console.log(`Number of categories: ${numberCategories.length}`);
 
 numberCategories.forEach(el => {
