@@ -12,9 +12,9 @@ const createBoxes = (amount) => {
 
   for (let i = 0; i < amount; i += 1) {
     const baseSize = 30;
-    const biggestSize = baseSize + i * 10;
+    const size = baseSize + i * 10;
     const box = document.createElement('div');
-    box.setAttribute('style', `width: ${biggestSize}px; height: ${biggestSize}px; background: ${getRandomHexColor()}`);
+    box.setAttribute('style', `width: ${size}px; height: ${size}px; background: ${getRandomHexColor()}`);
     boxes.append(box);
   }
 }
