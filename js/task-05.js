@@ -1,10 +1,11 @@
 const input = document.querySelector('#name-input');
 const span = document.querySelector('#name-output');
 
-function inputName() {
-    if (input.value === "") {
+const inputName = (event) => {
+    const userValue = event.target.value.trim();
+    if (userValue === "") {
         return span.textContent = "Anonymous";
     }
-    return span.textContent = input.value;
+    return span.textContent = userValue;
 }
 input.addEventListener('input', inputName)
